@@ -1,0 +1,104 @@
+/* html, body, div, nav, ul, li, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} */
+
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+} */
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #393939;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3 nav {
+  font-size: 33px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.centered {
+  width: 100%;
+  text-align: center;
+}
+
+.highlight {
+  color: #5BACC3;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+
+/* menu css */
+
+header>div {
+  background-image: url("/assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 575px;
+  max-height: 600px;
+}
+
+header>div>h1 {
+  color: white;
+  background-color: #393939;
+  background-size: 100%;
+  min-width: 280px;
+  max-width: 300px;
+  min-height: 180px;
+  max-height: 200px;
+  text-align: center;
+}
+
+body>section:nth-of-type(2n+1) {
+  background-color: #FFF0ED;
+}
+
+body>section:nth-of-type(2n) {
+  background-color: #F7F7F7;
+}
+
+nav>ul:last-of-type {
+  background-color: #393939;
+  color: greenyellow;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+nav>ul:last-of-type>a {
+  color: white;
+}
