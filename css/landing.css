@@ -1,0 +1,64 @@
+
+
+
+.products {
+  background-color: var(--light-grey);
+  text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  min-width: 330px;
+  max-width: 350px;
+  min-height: 440px;
+  max-height: 460px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card>img {
+  min-height: 240px;
+  max-height: 550px;
+  width: 100%;
+}
+
+.card p {
+  font-size: 33px;
+  color: var(--nitro-blue);
+}
+
+.discount-banner {
+  min-width: 1em;
+  max-width: 90%;
+  padding: 40px;
+  text-align: center;
+
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--graphite);
+  color: white;
+}
+
+button {
+  min-width: 180px;
+  max-width: 80%;
+  padding:20px;
+  border: none;
+  background-color: var(--nitro-blue);
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}

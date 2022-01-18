@@ -1,0 +1,65 @@
+.menu-feature>div {
+  background-image: url("/assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 57.5rem;
+  max-height: 60rem;
+  margin: auto;
+}
+
+.menu-feature > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-feature li {
+  /* min-width: 100%; */
+  /* max-width: 100%; */
+  /* min-height: 60px; */
+  /* max-height: 80px; */
+  /* padding: 20px; */
+  margin: 20px;
+  padding-left: 20px;
+  border-left: 4px solid var(--nitro-blue);
+}
+
+div>h1{
+  color: white;
+  background-color: var(--graphite);
+  background-size: 100%;
+  /* min-width: 2.8rem; */
+  min-width: 280px;
+  /* max-width: 30rem; */
+  max-width: 300px;
+  /* min-height: 18rem; */
+  min-height: 180px;
+  /* max-height: 20rem; */
+  max-height: 200px;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  /* padding: 20px; */
+}
+
+section:nth-of-type(2n+1) {
+  background-color: var(--nitro-pink);
+}
+
+body>section:nth-of-type(2n) {
+  background-color: var(--light-grey);
+}
+
+section>ul{
+  background-color: var(--graphite);
+  min-width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+section>ul a {
+  color: white;
+}
