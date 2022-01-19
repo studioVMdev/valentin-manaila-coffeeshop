@@ -1,64 +1,121 @@
+.hero-section {
+	background-color: var(--nitro-pink);
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 80rem;
+}
 
+.hero-section-left {
+	text-align: left;
+	width: 40rem;
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
+.hero-section-left > * {
+	margin: 2rem 0;
+}
+
+.hero-section-image {
+	min-height: 10rem;
+	max-height: 60rem;
+	width: fit-content;
+	padding-left: 5em;
+}
 
 .products {
-  background-color: var(--light-grey);
-  text-align: center;
-  display: block;
-  justify-content: center;
+	background-color: var(--light-grey);
+	text-align: center;
+	justify-content: center;
+}
+
+.products > * {
+	margin: 4rem;
 }
 
 .cards {
-  display: flex;
+	display: flex;
+	justify-content: space-between;
 }
 
 .card {
-  background-color: white;
-  min-width: 330px;
-  max-width: 350px;
-  min-height: 440px;
-  max-height: 460px;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-
+	background-color: white;
+	min-width: 33rem;
+	max-width: 35rem;
+	min-height: 44rem;
+	max-height: 46rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 0.9rem -0.1rem rgba(0, 0, 0, 0.25);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
 }
 
-.card>img {
-  min-height: 240px;
-  max-height: 550px;
-  width: 100%;
+.card > img {
+	min-height: 24rem;
+	max-height: 55rem;
+	width: fit-content;
+	margin: 0 auto;
 }
 
 .card p {
-  font-size: 33px;
-  color: var(--nitro-blue);
+	font-size: 3.3rem;
+	color: var(--nitro-blue);
+}
+
+.card > p,
+.card > h3 {
+	padding: 2rem 0;
 }
 
 .discount-banner {
-  min-width: 1em;
-  max-width: 90%;
-  padding: 40px;
-  text-align: center;
+	max-width: 90vw;
+	padding: 4rem;
+	text-align: center;
+	font-size: 4.5rem;
+	font-weight: 400;
+	font-style: normal;
+	background-color: var(--graphite);
+	color: white;
+	margin: 20rem 0;
+}
 
-  font-size: 45px;
-  font-weight: 400;
-  font-style: normal;
-  background-color: var(--graphite);
-  color: white;
+.container {
+	padding: 0 20rem;
 }
 
 button {
-  min-width: 180px;
-  max-width: 80%;
-  padding:20px;
-  border: none;
-  background-color: var(--nitro-blue);
-  color: white;
-  font-size: 21px;
-  font-weight: 400;
+	min-width: 18rem;
+	max-width: 80%;
+	padding: 2rem;
+	border: none;
+	background-color: var(--nitro-blue);
+	color: white;
+	font-size: 2.1rem;
+	font-weight: 400;
+}
+
+section {
+	text-align: center;
+	display: flex;
+	margin: 0 auto;
+}
+
+footer {
+	background-color: var(--nitro-pink);
+	text-align: left;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+footer > .container {
+	display: flex;
+	justify-content: space-between;
+}
+footer h3 {
+	padding: 0 0 2rem 0;
 }
