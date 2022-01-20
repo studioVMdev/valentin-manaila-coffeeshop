@@ -1,11 +1,11 @@
 :root {
-	font-size: 0.625rem;
 	box-sizing: border-box;
+	font-size: 0.625rem;
+	/* this is 10px of the browser default 16px */
 	--nitro-blue: #5bacc3;
 	--nitro-pink: #fff0ed;
 	--graphite: #393939;
 	--light-grey: #f7f7f7;
-	/* this is 10px of the browser default 16px */
 }
 
 html,
@@ -25,7 +25,6 @@ p {
 	margin: 0;
 	padding: 0;
 	border: 0;
-
 	vertical-align: baseline;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -52,98 +51,83 @@ body {
 ol,
 ul {
 	list-style: none;
-	display: flex;
 }
 
-h1,
+h1, .heading-alpha, .heading-beta,
 h2 {
 	/* font-size: 60px; */
 	font-size: 6rem;
 	font-weight: 300;
 }
 
-h3 {
+h3, .heading-gamma {
 	/* font-size: 33px; */
 	font-size: 3.3rem;
 	font-weight: 300;
 }
 
-li {
+li, .font-size__beta {
 	/* font-size: 21px; */
 	font-size: 2.1rem;
 	font-weight: 400;
 }
 
-p {
+p, .font-size__alpha{
 	/* font-size: 18px; */
 	font-size: 1.8rem;
 	font-weight: 400;
 }
 
-header {
+.navigation {
 	background-color: var(--nitro-pink);
 	color: var(--graphite);
 	padding: 2rem;
 }
-
-header ul > li {
-	justify-content: center;
-	height: 100%;
-	margin: auto;
-	padding-left: 2rem;
-}
-
-header li > a {
-	color: var(--graphite);
-}
-
-header img {
-	min-width: 5rem;
-	max-width: 12rem;
-}
-
-header h1 {
-	padding: 0;
-	margin: 0;
-}
-
-nav {
+.main-nav {
 	display: flex;
 	align-items: center;
 	width: 100%;
 }
 
-.active-nav {
-	color: var(--nitro-blue);
+.main-nav__logo {
+	min-width: 5rem;
+	max-width: 12rem;
 }
-
-section {
-	text-align: center;
+.manin-nav__heading {
+	padding: 0;
+	margin: 0;
+	font-size: 6rem;
+	font-weight: 300;
+}
+.main-nav__list {
 	display: flex;
-	flex-direction: column;
+}
+.main-nav__list-item {
+	justify-content: center;
+	height: 100%;
+	margin: auto;
+	padding-left: 2rem;
+}
+.main-nav__link {
+	color: var(--graphite);
 }
 
-section{
-  min-width: 60rem;
-}
-
-section p {
-	/* max-width: 45rem; */
-	font-style: italic;
-	margin: 0 auto;
-}
-
-section h3 {
-	/* padding: 0; */
-	margin: 0 auto;
-	padding: 2rem;
-}
-
-.centered {
-	width: 100%;
-	text-align: center;
-}
-
-.highlight {
+.main-nav__link--active {
 	color: var(--nitro-blue);
+}
+
+.section  {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__heading {
+}
+
+.footer__text {
 }
