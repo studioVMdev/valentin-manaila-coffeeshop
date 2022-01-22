@@ -1,32 +1,22 @@
 :root {
+	margin-block-start: 0;
+	margin-block-end: 0;
 	box-sizing: border-box;
 	font-size: 0.625rem;
-	/* this is 10px of the browser default 16px */
+	/* convert rem from default 16px to base 10 e.g. 1rem = 10px*/
 	--nitro-blue: #5bacc3;
 	--nitro-pink: #fff0ed;
 	--graphite: #393939;
 	--light-grey: #f7f7f7;
 }
 
-html,
-body,
-div,
-nav,
-ul,
-li,
-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+* {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	margin-block-start: 0;
-	margin-block-end: 0;
+	font-family: "Open Sans";
+	font-weight: 400;
+	color: var(--graphite);
+	list-style: none;
 }
 
 a:link {
@@ -39,17 +29,6 @@ a:visited {
 
 a:hover {
 	font-weight: bold;
-}
-
-body {
-	font-family: "Open Sans";
-	font-weight: 400;
-	color: var(--graphite);
-}
-
-ol,
-ul {
-	list-style: none;
 }
 
 h1,
@@ -103,7 +82,6 @@ li,
 	display: flex;
 }
 .main-nav__list-item {
-	justify-content: center;
 	height: 100%;
 	margin: auto;
 	padding-left: 2rem;
