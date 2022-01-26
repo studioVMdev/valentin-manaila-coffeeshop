@@ -1,34 +1,61 @@
 .menu-feature {
 	background-image: url("../assets/images/coffee-circle.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	min-width: 100%;
 	max-width: 100%;
 	min-height: 57.5rem;
 	max-height: 60rem;
+
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	/* /* justify-content: center; */
 	justify-content: space-between;
 }
 
-.menu-feature__heading {
-	min-width: 2.8rem;
-	max-width: 30rem;
+.menu-feature__heading-container {
+  background-color: var(--graphite);
+	/* min-width: 2.8rem; */
+	/* max-width: 30rem; */
 	min-height: 18rem;
 	max-height: 20rem;
+  width: 280px;
+
+  position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-feature__heading-bg {
+  /* width: fit-content; */
+  /* position: absolute; */
+}
+
+.menu-feature__heading {
+	/* position: absolute; */
 	color: white;
-	background-color: var(--graphite);
 	text-align: center;
-	margin: 0 auto;
+	border: 5px solid var(--nitro-blue);
+  width: 100%;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+	/* margin: auto; */
+	/* margin: auto 0; */
+	/* align-self: flex-end; */
 }
 
 .menu-feature__list {
+	justify-self: flex-end;
 	background-color: var(--graphite);
 	min-width: 100%;
 	max-width: 100%;
 	display: flex;
 	justify-content: center;
-	text-align: center;
 }
 
 .menu-feature__link {
