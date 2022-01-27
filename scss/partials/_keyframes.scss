@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+@keyframes color-change {
+	0% {
+		background-color: $graphite;
+	}
+	50% {
+		background-color: $nitro-blue;
+	}
+	100% {
+		background-color: $graphite;
+	}
+}
+
+@keyframes image-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

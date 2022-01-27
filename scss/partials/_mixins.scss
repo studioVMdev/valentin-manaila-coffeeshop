@@ -1,0 +1,13 @@
+@mixin flex($justify, $align, $dir: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dir;
+}
+
+@mixin flex-c($dir: row){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:$dir ;
+}

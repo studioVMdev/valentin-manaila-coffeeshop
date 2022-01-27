@@ -1,0 +1,126 @@
+@use "./resets";
+@use "./mixins" as *;
+@use "./keyframes" as *;
+@use "./variables" as *;
+
+.site-container {
+	width: 110rem;
+	margin: 0 5rem;
+}
+
+h1,
+.heading-alpha,
+.heading-beta,
+h2 {
+	font-size: 6rem;
+	font-weight: 300;
+}
+
+h3,
+.heading-gamma {
+	font-size: 3.3rem;
+	font-weight: 300;
+}
+p,
+.font-size__alpha {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+li,
+.font-size__beta {
+	font-size: 2.1rem;
+	font-weight: 400;
+}
+
+.main-nav {
+	background-color: $nitro-pink;
+	color: $graphite;
+	// padding: 2rem;
+	height: $nav-height;
+	box-shadow: 0 4px 2px -2px gray;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__left-wrapper {
+		display: flex;
+	}
+
+	&__logo {
+		min-width: 5rem;
+		max-width: 12rem;
+		padding-top: 2rem;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		height: 100%;
+		margin: auto;
+		padding-left: 2rem;
+	}
+	&__link {
+		color: $graphite;
+	}
+
+	&__link--active {
+		color: $nitro-blue;
+	}
+}
+
+.footer {
+	background-color: $nitro-pink;
+	text-align: left;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__heading {
+		font-size: 3.3rem;
+		font-weight: 300;
+		padding: 0 0 2rem 0;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+
+	&__text-bold {
+		font-weight: bold;
+	}
+
+	&__icon {
+		min-width: 5rem;
+		max-width: 12rem;
+	}
+
+  &__beans{
+	transform: scale(2.4);
+	opacity: 25%;
+	position: absolute;
+  }
+}
+
+.footer__beans-left {
+  @extend .footer__beans;
+	top: 5rem;
+	left: -1rem;
+}
+
+.footer__beans-right {
+  @extend .footer__beans;
+	top: 10rem;
+	left: calc(100vw - 5rem);
+}

@@ -1,103 +1,268 @@
-.menu-feature {
-	background-image: url("../assets/images/coffee-circle.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-width: 100%;
-	max-width: 100%;
-	min-height: 57.5rem;
-	max-height: 60rem;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/* /* justify-content: center; */
-	justify-content: space-between;
+:root {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  box-sizing: border-box;
+  font-size: 0.625rem;
+  box-sizing: border-box;
+  /* convert rem from default 16px to base 10 e.g. 1rem = 10px*/
 }
 
-.menu-feature__heading-container {
-  background-color: var(--graphite);
-	/* min-width: 2.8rem; */
-	/* max-width: 30rem; */
-	min-height: 18rem;
-	max-height: 20rem;
-  width: 280px;
-
-  position: relative;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+body {
+  box-sizing: border-box;
 }
 
-.menu-feature__heading-bg {
-  /* width: fit-content; */
-  /* position: absolute; */
+body > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu-feature__heading {
-	/* position: absolute; */
-	color: white;
-	text-align: center;
-	border: 5px solid var(--nitro-blue);
-  width: 100%;
-  width: fit-content;
+:after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
-	/* margin: auto; */
-	/* margin: auto 0; */
-	/* align-self: flex-end; */
+  font-family: "Open Sans";
+  font-weight: 400;
+  list-style: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+@keyframes image-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.site-container {
+  width: 110rem;
+  margin: 0 5rem;
+}
+
+h1,
+.heading-alpha,
+.heading-beta,
+h2 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h3,
+.heading-gamma {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+p,
+.font-size__alpha {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+li,
+.font-size__beta {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.main-nav {
+  background-color: #fff0ed;
+  color: #393939;
+  height: 8rem;
+  box-shadow: 0 4px 2px -2px gray;
+}
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav__left-wrapper {
+  display: flex;
+}
+.main-nav__logo {
+  min-width: 5rem;
+  max-width: 12rem;
+  padding-top: 2rem;
+}
+.main-nav__list {
+  display: flex;
+}
+.main-nav__item {
+  height: 100%;
+  margin: auto;
+  padding-left: 2rem;
+}
+.main-nav__link {
+  color: #393939;
+}
+.main-nav__link--active {
+  color: #5bacc3;
+}
+
+.footer {
+  background-color: #fff0ed;
+  text-align: left;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__heading {
+  font-size: 3.3rem;
+  font-weight: 300;
+  padding: 0 0 2rem 0;
+}
+.footer__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.footer__text-bold {
+  font-weight: bold;
+}
+.footer__icon {
+  min-width: 5rem;
+  max-width: 12rem;
+}
+.footer__beans, .footer__beans-right, .footer__beans-left {
+  transform: scale(2.4);
+  opacity: 25%;
+  position: absolute;
+}
+
+.footer__beans-left {
+  top: 5rem;
+  left: -1rem;
+}
+
+.footer__beans-right {
+  top: 10rem;
+  left: calc(100vw - 5rem);
+}
+
+.menu-feature {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 57.5rem;
+  max-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu-feature__heading-container {
+  background-color: #393939;
+  min-height: 18rem;
+  max-height: 20rem;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.menu-feature__heading-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #5bacc3;
+  transform: translate(-1rem, -1rem);
+  z-index: 1;
+}
+.menu-feature__heading {
+  color: white;
+}
 .menu-feature__list {
-	justify-self: flex-end;
-	background-color: var(--graphite);
-	min-width: 100%;
-	max-width: 100%;
-	display: flex;
-	justify-content: center;
+  justify-self: flex-end;
+  background-color: #393939;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
 .menu-feature__link {
-	color: white;
-	font-size: 2.1rem;
-	font-weight: 400;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 400;
 }
 .menu-feature__item {
-	margin: 2rem;
-	padding-left: 2rem;
-	border-left: 0.4rem solid
-		var(--nitro-blue);
+  margin: 2rem;
+  padding-left: 2rem;
+  border-left: 0.4rem solid #5bacc3;
 }
 
-.container {
-	max-width: 50rem;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+.menu__bg1 {
+  background-color: #fff0ed;
 }
 
-.menu-items__bg1 {
-	background-color: var(--nitro-pink);
-}
-.menu-items__bg2 {
-	background-color: var(--light-grey);
+.menu__bg2 {
+  background-color: #f7f7f7;
 }
 
-.menu-items__heading {
-	margin-bottom: 4rem;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.menu-item__heading {
-	margin-bottom: 1rem;
+.menu__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.menu-item__text {
-	margin-bottom: 1rem;
+.menu__category-wrapper {
+  width: 50%;
+  text-align: center;
 }
-
-.menu-item__price {
-	color: var(--nitro-blue);
-	font-style: italic;
-	margin-bottom: 2rem;
+.menu__heading {
+  margin-bottom: 4rem;
+}
+.menu__item-heading {
+  margin-bottom: 1rem;
+}
+.menu__item-text {
+  margin-bottom: 1rem;
+}
+.menu__item-price {
+  color: #5bacc3;
+  font-style: italic;
+  margin-bottom: 2rem;
 }
