@@ -7,23 +7,27 @@
 .hero {
 	background-color: $nitro-pink;
 	margin: 0 auto;
-	&__container {
-		display: flex;
-		flex: row;
-		justify-content: space-between;
-	}
 
+	&__container {
+    padding: 10rem 0;
+		// display: flex;
+		// flex: row;
+		// justify-content: space-between;
+    @include flex(space-between,center);
+	}
+  
 	&__left-wrapper {
-		text-align: left;
+    // text-align: left;
 		width: 40rem;
 		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+    // @include flex(flex-end,space-between, column);
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
 	}
 
 	&__left-wrapper > * {
-		margin: 2rem 0;
+		margin: 4rem 0;
 	}
 
 	&__image {

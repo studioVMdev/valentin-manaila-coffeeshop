@@ -12,19 +12,18 @@
 	max-width: 100%;
 	min-height: 57.5rem;
 	max-height: 60rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@include flex(
+		center,
+		center,
+		column
+	);
 
 	&__heading-container {
 		background-color: $graphite;
 		min-height: 18rem;
 		max-height: 20rem;
 		min-width: 280px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex-c;
 		position: relative;
 
 		&::after {
@@ -52,8 +51,7 @@
 		background-color: $graphite;
 		min-width: 100%;
 		max-width: 100%;
-		display: flex;
-		justify-content: center;
+		@include flex-c;
 	}
 
 	&__link {
@@ -78,17 +76,19 @@
 }
 
 .menu {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	@include flex(
+		center,
+		center,
+		column
+	);
 
 	&__container {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		@include flex(
+			center,
+			center,
+			column
+		);
 	}
 	&__category-wrapper {
 		width: 50%;
